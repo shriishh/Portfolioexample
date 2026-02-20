@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shrishti Saklani | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website for Shrishti Saklani showcasing tech projects and software engineering skills."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="logo">Shrishti.dev</div>
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero-content container">
+        <p class="eyebrow">Software Engineer & Builder</p>
+        <h1>Hi, I’m Shrishti Saklani. I build reliable digital products.</h1>
+        <p class="lead">
+          Aspiring software engineer with knowledge of Web Development, C, JAVA, DSA , and much more
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Let’s Work Together</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="projects" class="section container">
+        <div class="section-heading">
+          <h2>Featured Projects</h2>
+          <p>A selection of applications and tools I’ve built.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter projects by type">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="api">APIs</button>
+          <button class="filter-btn" data-filter="automation">Automation</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-category="web">
+            <h3>TaskFlow</h3>
+            <p>
+              A collaborative project management dashboard with Kanban workflows,
+              comments, and real-time updates.
+            </p>
+            <ul class="tech-list">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Supabase</li>
+            </ul>
+            <a href="#" aria-label="View TaskFlow project">View Project →</a>
+          </article>
+
+          <article class="project-card" data-category="api">
+            <h3>Insights API</h3>
+            <p>
+              A REST API that aggregates analytics data, enforces role-based access,
+              and serves dashboards securely.
+            </p>
+            <ul class="tech-list">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <a href="#" aria-label="View Insights API project">View Project →</a>
+          </article>
+
+          <article class="project-card" data-category="automation">
+            <h3>DeployBot CI Assistant</h3>
+            <p>
+              A deployment automation tool that validates builds, runs tests, and
+              pushes releases with approval gates.
+            </p>
+            <ul class="tech-list">
+              <li>Python</li>
+              <li>GitHub Actions</li>
+              <li>Docker</li>
+            </ul>
+            <a href="#" aria-label="View DeployBot project">View Project →</a>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <h3>CommerceLite</h3>
+            <p>
+              A modern e-commerce frontend featuring dynamic product search,
+              optimized images, and a streamlined checkout experience.
+            </p>
+            <ul class="tech-list">
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+              <li>Stripe</li>
+            </ul>
+            <a href="#" aria-label="View CommerceLite project">View Project →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Core Skills</h2>
+            <p>Technologies and practices I use to deliver high-quality software.</p>
+          </div>
+          <div class="skills-grid">
+            <div>
+              <h3>Frontend</h3>
+              <p>HTML, CSS, JavaScript, TypeScript, React, Next.js</p>
+            </div>
+            <div>
+              <h3>Backend</h3>
+              <p>Node.js, Express, Python, REST APIs, PostgreSQL, MongoDB</p>
+            </div>
+            <div>
+              <h3>DevOps</h3>
+              <p>Docker, CI/CD, GitHub Actions, Vercel, Cloud deployment</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <div class="section-heading">
+          <h2>Connect With Me</h2>
+          <p>You can reach out to me directly using the details below.</p>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p><strong>Connect with me at:</strong> shrishti.saklani2006@gmail.com</p>
+          <p><strong>Mobile number:</strong> 8882817778</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Shrishti Saklani. Built with care.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
